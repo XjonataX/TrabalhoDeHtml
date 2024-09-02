@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+   <style>
+    img{
+        width: 200px;
+        height: 250px;
+    }
+    footer{
+        background-color: aqua;      
+    }
+    header{
+        background-color: pink;
+        color: rgb(245, 106, 152);
+    }
+    nav{
+        background-color: blueviolet;
+    }
+    article{
+        background-color: brown;
+    }
+    .grid1>*{
+        min-height: 100px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+        ;
+    }
+    .grid1{
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 240px 1fr 1fr 1fr;
+        gap: 10px;
+    }
+    header{
+
+        grid-column: 1 / -1;  /* sao as colunas do grid começando na primeira e indo ate a 5 */
+        grid-row: 1 ;     /*sao as linhas pro header separei apenas 2 */
+    }
+    nav{
+        grid-column: 1 / -1;
+    }
+    section{
+        grid-column: 1 / -1;
+    }
+    footer{
+        grid-column: 1 / -1;
+       
+    }
+    ul>*{
+            display: inline;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 70px;
+
+    }
+   </style>
+
+</head>
+<body>
+    <div class="grid1">
+        <header><h1>Jonatã Garcia Oliveira Dantas Pereira<h1></h1></header>
+        <nav>  
+            <ul>
+                <li><a>Sobre mim</a></li>
+                <li><a>Contato</a></li>
+                <li><a>Portifoleo</a></li>
+                <li><a>Educaçãoa</a></li>
+            </ul>
+            
+        </nav>
+        <section><img src="Imagem do WhatsApp de 2024-09-01 à(s) 18.05.45_5ad6cf68.jpg"></section>
+        <article>article</article>
+        <article>article</article>
+        <article>article</article>
+        <footer>footer</footer>
+        
+
+    </div>
+</body>
+</html>

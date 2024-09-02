@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Começando pelo estilo resolvi fazer tudo em uma pagina */
+        a {
+            color: pink;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: pink;
+            color: palevioletred;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            text-indent: 100px;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(241, 28, 153);
+        }
+
+        /* Fiz umas classes para as imagens */
+        .img1 {
+            width: 300;
+            height: 350px;
+            border-radius: 50%;
+            border: 5px solid rgb(179, 70, 179)
+        }
+
+        .img2 {
+            width: 300;
+            height: 350px;
+            border: 5px solid rgb(179, 70, 179)
+        }
+
+        .centralizador {
+            text-align: center;
+        }
+
+        h1 {
+            color: palevioletred;
+        }
+
+        h2 {
+            color: rgb(216, 70, 94);
+        }
+
+        h3 {
+            text-align: center;
+            color: rgb(216, 70, 94);
+        }
+
+        p {
+            justify-items: center;
+            text-align: center;
+            text-indent: 50px;
+        }
+
+        .p1 {
+            color: rgb(230, 59, 88);
+            font-size: large;
+        }
+
+        .p2 {
+            font-size: large;
+            text-indent: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Fiz link interno -->
+    <nav>
+        <ul>
+            <li><a href="#l1">Sobre Mim</a></li>
+            <li><a href="#l2">Formação</a></li>
+            <li><a href="#l3">Portifolio</a></li>
+            <li><a href="#l4">Contato</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="centralizador">
+            <img class="img1" src="./img/EU.jpg" title="MinhaFoto" alt="MinhaFoto">
+            <h1>................................ Jonatã Garcia ................................</h1>
+
+        </div>
+
+    </header>
+    <main>
+        <section>
+            <h2 id="l1" class="centralizador">.........Sobre Mim.........</h2>
+            <p>Meu nome é Jonatã Garcia tenho 24 anos, nasci em são jose dos campos, adoro a cidade acho éla muito
+                calma, gosto muito de jogos, ler, fazer viagens e comer, sou bixesual e ja estou namorando um cara por
+                mais de um ano amo muito de viagar com ele.</p>
+            <p>Meu genero de filme e livros preferido são de fantasia um dos meus filmes preferido é o hobbit</p>
+            <p>Tenho uma cachorrinha caramela muito bonita, estou me aventurando e tentando a area de programação tenho
+                4 irmaos 2 por parte de pai e 2 por parte de mãe.
+            </p>
+            <br>
+            <div class="centralizador">
+                <img class="img2" src="img/Amora.jpg" title="Amora" alt="amora">
+            </div>
+
+        </section>
+        <section>
+            <h3 id="l2">.........Formação.........</h3>
+            <p>Conclui o ensino médio e cursei automação industrial no IFSP</p>
+            <div class="centralizador">
+                <img class="img2" src="img/ifsp.png" title="ifsp" alt="ifsp">
+            </div>
+        </section>
+        <section>
+            <h3 id="l3">.........Portifolio.........</h3>
+            <p>Trabalhei em 2 Padarias</p>
+            <div class="centralizador">
+                <img class="img2" src="img/padaria2.jpg" title="pão" alt="pão">
+            </div>
+        </section>
+
+    </main>
+    <!-- usei uma tabela de exmplo dos exercicios -->
+    <footer>
+
+        <h3 id="l4">.........Contato.........</h3>
+        <p class="p2">Caso queira entrar em contato diretamente meu numero é 129967059 <span
+                style="color: rgb(248, 39, 74);">
+                ou então envie um formulario</span></p>
+        <form action="" method="">
+            <table>
+                <tr>
+                    <th>
+                        <label for"nome">Nome:</label>
+                    </th>
+                    <td>
+                        <input type="text" name="nome" id="nome">
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="email">E-mail:</label></th>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="msg">Digite sua Mensagem:</label></th>
+                    <td><textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea></td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <button>Enviar</button></td>
+                </tr>
+
+            </table>
+        </form>
+
+
+    </footer>
+</body>
+
+</html>
